@@ -88,9 +88,12 @@ while opc!=3:
                 
                 print("Cotizacion")
                 print("-"*50)
-                print(f"{contcarillas} Tratamiento Carillas Porcelana ${CP*contcarillas}")
-                print(f"{contimplante} Implantes Dentales ${ID*contimplante}")
-                print(f"{contortodoncia} Ortodoncia de Brackets ${OB*contortodoncia}")
+                if contcarillas>0:
+                    print(f"{contcarillas} Tratamiento Carillas Porcelana ${CP*contcarillas}")
+                if contimplante>0:
+                    print(f"{contimplante} Implantes Dentales ${ID*contimplante}")
+                if contortodoncia>0:
+                    print(f"{contortodoncia} Ortodoncia de Brackets ${OB*contortodoncia}")
                 print("-"*50)
                 print(f"SubTotal: {total}")
                 if tipo == 1:
